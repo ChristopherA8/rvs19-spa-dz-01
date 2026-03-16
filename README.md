@@ -1,2 +1,3 @@
 # Animated SFML Scene
-![animation-preview](https://github.com/user-attachments/assets/19895b6e-687c-47d8-a207-2527f8cc6237)
+
+![animation-preview](https://github.com/user-attachments/assets/f4f8d7b4-95eb-4943-beb3-66caadf65db9)
