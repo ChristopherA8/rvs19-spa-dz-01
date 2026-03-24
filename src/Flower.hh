@@ -4,10 +4,10 @@
 
 class Flower {
    private:
-      sf::RenderWindow *_window;
+      sf::RenderWindow& _window;
 
    public:
-      Flower(sf::RenderWindow *window);
+      Flower(sf::RenderWindow& window);
 
       /**
        * Draws the flower to the window

@@ -1,13 +1,13 @@
 #include "Flower.hh"
 #include "EllipseShape.hh"
 
-Flower::Flower(sf::RenderWindow *window) {
-   this->_window = window;
+Flower::Flower(sf::RenderWindow& window) : _window(window) {
+   //
 }
 
 void Flower::draw() {
-   int width = this->_window->getSize().x;
-   int height = this->_window->getSize().y;
+   int width = this->_window.getSize().x;
+   int height = this->_window.getSize().y;
    sf::Vector2f pedalOrigin = sf::Vector2f(30, 100);
    sf::Vector2f pedalPosition = sf::Vector2f(((width / 2) - (30 + 90)), (height / 2) - 100);
    sf::Color white = sf::Color(232, 232, 232);
@@ -58,12 +58,12 @@ void Flower::draw() {
    leaf2.setRotation(sf::degrees(225));
    leaf2.setPosition(sf::Vector2f(((width / 2) - (15 + 90)), (height / 2) + 90));
    
-   this->_window->draw(leaf1);
-   this->_window->draw(leaf2);
-   this->_window->draw(stem);
-   this->_window->draw(pedal1);
-   this->_window->draw(pedal2);
-   this->_window->draw(pedal3);
-   this->_window->draw(pedal4);
-   this->_window->draw(centerCircle);
+   this->_window.draw(leaf1);
+   this->_window.draw(leaf2);
+   this->_window.draw(stem);
+   this->_window.draw(pedal1);
+   this->_window.draw(pedal2);
+   this->_window.draw(pedal3);
+   this->_window.draw(pedal4);
+   this->_window.draw(centerCircle);
 }

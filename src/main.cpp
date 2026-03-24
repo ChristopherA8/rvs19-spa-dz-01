@@ -7,7 +7,7 @@
 int main() {
    sf::RenderWindow window(sf::VideoMode({800, 600}), "Flower", (sf::Style::Close | sf::Style::Titlebar));
    window.setFramerateLimit(60);
-   Flower flower(&window);
+   Flower flower(window);
 
    sf::Clock clock = sf::Clock();
    float previousX = 0.f;
